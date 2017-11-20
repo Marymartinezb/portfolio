@@ -1,0 +1,19 @@
+.skills-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dev-cap,
+.soft-skills {
+    text-align: center;
+    width: 50%;
+}
+
+.skill-icon {
+    width: 25%;
+}
+
+.link-works {
+    float: right;
+    margin: $space-medium 0;
+}

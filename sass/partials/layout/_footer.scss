@@ -1,0 +1,47 @@
+footer {
+    background-color: $turquoise;
+    padding: $space-base 0;
+}
+
+.footer-left {
+    float: left;
+
+    ul {
+        padding: 0;
+        display: flex;
+        direction: row;
+    }
+
+    li {
+        list-style: none;
+        padding: .7rem $space-small;
+        border-right: 1px solid #fff;
+    }
+
+    a {
+        color: #fff;
+        border-bottom: none;
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+    
+}
+
+.footer-right {
+    float: right;
+
+    a {
+        color: #fff;
+        border-bottom: none;
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    img {
+        width: 8rem;
+    }
+}

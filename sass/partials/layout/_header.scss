@@ -1,0 +1,19 @@
+header {
+    position: relative;
+}
+
+.heading {
+    background-image: url('../img/bg-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 29rem;
+    padding: 9rem 0;
+    text-align: center;
+    width: 30rem;
+}
+
+.heading-logo {
+    padding: 0 0 $space-base;
+    width: 12rem;
+}

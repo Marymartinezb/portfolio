@@ -5,7 +5,9 @@
   <meta name="author" content="Mary Martinez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
   <!--[if lt IE 9]>
   <script type="text/javascript">
     var arr=['article','aside','footer','header','nav','section','figcaption','figure','main','template'];
@@ -16,93 +18,112 @@
   <title>Mary Martínez | Home</title>
 </head>
 <body>
-  <header>
-    <a>Menu</a>
-    <nav>
-      <a>Close</a>
+  <header class="bg-gray sections">
+    <a id="openMenu" class="open-menu">Menu</a>
+    <a id="closeMenu" class="close-menu hide-content">Close</a>
+    <nav id="menu" class="hide-content">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
+        <!-- <li><a href="aboutme.html">About Me</a></li>
         <li><a href="works.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li> -->
       </ul>
       <img src="img/logo.png" alt="Logo" class="menu-logo">
     </nav>
-    <div class="heading">
-      <img src="img/logo.png" alt="Logo" class="logo">
+    <div class="heading group">
+      <img class="heading-logo" src="img/logo.png" alt="Logo" class="logo">
       <h1 class="name">Mary Martínez B.</h1>
       <h2 class="profession">Front end Developer</h2>
     </div>
   </header>
-  <section class="works">
+  <section class="works sections l-group">
     <h2>Some Works</h2>
-    <article>
-      <img src="img/hogar.png" alt="Foto Sitio Hogar de Excelencia Familiar">
-      <h3>Excelencia Familiar</h3>
-      <p>Son un hogar para niños en abandono, la organización no contaba con los fondos necesarios para un <a>sitio web</a>.</p>
-      <p>El cual les ayudaá a resolver sus donaciones.</p>
-      <p>Colaboración</p>
-      <ul>
-        <li>Drupal</li>
-        <li>Css</li>
-        <li>Manejo de contenidos</li>
-        <li>Capacitación al usuario</li>
-      </ul>
+    <article class="works-container">
+      <div class= "works-items"><img src="img/hogar.png" alt="Foto Sitio Hogar de Excelencia Familiar"></div>
+      <div class= "works-items">
+        <h3>Excelencia Familiar</h3>
+        <p>They are a home for abandoned children, the organization did not have the necessary funds for <a target=_blank href="http://excelenciafamiliar.org">this website</a>, which would help them receive donations and volunteering.</p>
+        <p>Colaboration</p>
+        <ul>
+          <li>Drupal</li>
+          <li>Menu, CSS ang JS</li>
+          <li>Configuration and content management on Drupal</li>
+          <li>User training</li>
+        </ul>
+      </div>
     </article>
-    <article>
-      <img src="img/hogar.png" alt="Foto Sitio Hogar de Excelencia Familiar">
-      <h3>Excelencia Familiar</h3>
-      <p>Son un hogar para niños en abandono, la organización no contaba con los fondos necesarios para un <a>sitio web</a>.</p>
-      <p>El cual les ayudaá a resolver sus donaciones.</p>
-      <p>Colaboración</p>
-      <ul>
-        <li>Drupal</li>
-        <li>Css</li>
-        <li>Manejo de contenidos</li>
-        <li>Capacitación al usuario</li>
-      </ul>
+    <article class="works-container">
+      <div class= "works-items"><img src="img/conversable.png" alt="Foto Sitio Conversable"></div>
+      <div class= "works-items">
+        <h3>ConversABLE</h3>
+        <p>The company ConversABLE needed a site to resolve the sale of their services and improve the visualization of what is <a target=_blank href="http://conversable.org">ConversABLE</a> and its objectives.</p>
+        <p>Colaboration</p>
+        <ul>
+          <li>Scrum</li>
+          <li>JS, Sass and PHP applied to Drupal.</li>
+          <li>Configuration and content management on Drupal</li>
+          <li>User training</li>
+        </ul>
+      </div>
     </article>
-    <article>
-      <img src="img/hogar.png" alt="Foto Sitio Hogar de Excelencia Familiar">
-      <h3>Excelencia Familiar</h3>
-      <p>Son un hogar para niños en abandono, la organización no contaba con los fondos necesarios para un <a>sitio web</a>.</p>
-      <p>El cual les ayudaá a resolver sus donaciones.</p>
-      <p>Colaboración</p>
-      <ul>
-        <li>Drupal</li>
-        <li>Css</li>
-        <li>Manejo de contenidos</li>
-        <li>Capacitación al usuario</li>
-      </ul>
+    <article class="works-container">
+      <div class= "works-items"><img src="img/cetav.png" alt="Foto Sitio CETAV"></div>
+      <div class= "works-items">
+        <h3>CETAV</h3>
+        <p>As part of our study community,We had to improve <a target=_blank href="http://www.parquelalibertad.org/cetav/">our academic website</a>.</p>
+        <p>Improve the visibility of employability, graduetes and news pages was essential.</p>
+        <p>Colaboration</p>
+        <ul>
+          <li>Project Management</li>
+          <li>Scrum</li>
+          <li>Configuration and content management on Drupal</li>
+          <li>JS, Sass</li>
+          <li>Wireframes, Design</li>
+        </ul>
+      </div>
     </article>
-    <a href="works.html">See more works</a>
-  </section>
-  <section class="skills">
-    <div class="dev-cap">
-      <h3>Dev Capabilities</h3>
-      <img src="img/.png" alt="">
-      <img src="img/.png" alt="">
-      <img src="img/.png" alt="">
-      <img src="img/.png" alt="">
-      <img src="img/.png" alt="">
-      <img src="img/.png" alt="">
+    <div class="link-works">
+      <!-- <a class="btn" href="works.html">See more works</a> -->
     </div>
-    <div class="soft-skills">
-      <h3>Soft Skills</h3>
-      <img src="img/.png" alt="">
-      <img src="img/.png" alt="">
-      <img src="img/.png" alt="">
+  </section>
+  <section class="bg-gray sections ">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="dev-cap group">
+        <h3>Dev Capabilities</h3>
+        <img class="skill-icon" src="img/icons/html.png" alt="HTML">
+        <img class="skill-icon" src="img/icons/js.png" alt="JS">
+        <img class="skill-icon" src="img/icons/css.png" alt="CSS">
+        <img class="skill-icon" src="img/icons/sass.png" alt="Sass">
+        <img class="skill-icon" src="img/icons/github.png" alt="Github">
+        <img class="skill-icon" src="img/icons/wordpress.png" alt="Wordpress">
+        <img class="skill-icon" src="img/icons/drupal.png" alt="Drupal">
+        <img class="skill-icon" src="img/icons/ui-ux.png" alt="UX">
+      </div>
+      <div class="soft-skills group">
+        <h3>Soft Skills</h3>
+        <img class="skill-icon" src="img/icons/agile.png" alt="Agile">
+        <img class="skill-icon" src="img/icons/designthinking.png" alt="Design Thinking">
+        <img class="skill-icon" src="img/icons/conversable.png" alt="Conversable">
+      </div>
     </div>
   </section>
   <footer>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="aboutme.hmtl">About Me</a></li>
-      <li><a href="works.html">Works</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="mailto:mary.mart@gmail.com">mary.mart@gmail.com</a>
-    <img src="img/logo.png" alt="Logo" class="footer-logo">
+    <div class="group">
+      <div class="footer-left">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <!-- <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:mary.mart@gmail.com">mary.mart@gmail.com</a>
+        <img src="img/logo.png" alt="Logo" class="footer-logo">
+      </div>
+    </div>
   </footer>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

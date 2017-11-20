@@ -1,0 +1,13 @@
+.works-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: $space-small;
+}
+
+.works-items {
+    width: 50%;
+
+    img {
+        width: 90%;
+    }
+}
